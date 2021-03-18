@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const dbURI = 'mongodb://localhost/bookStore';
 // if (process.env.NODE_ENV === 'production') {
-//     dbURI = "mongodb+srv://CS628team:UERjRwAMLQzLil4v@cluster0.7yjvb.mongodb.net/test"
+//     dbURI = "mongodb+srv://CS628team:xxxxxxxxx@cluster0.7yjvb.mongodb.net/test"
 // }
 
 mongoose.connect(dbURI, {
