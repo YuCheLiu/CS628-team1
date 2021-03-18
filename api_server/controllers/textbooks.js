@@ -4,7 +4,7 @@ const books = mongoose.model('Bookstore');
 const textbooksList = async (req, res) => {
     try {
         let bookList = await books.find().limit(10);
-        return bookList;
+        return res.bookList;
     } catch (err){
         return res.status(404).json(err);
     };
