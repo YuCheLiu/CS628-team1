@@ -1,12 +1,12 @@
 //Require Mongoose
-var mongoose = require('mongoose');
+const mongoose = require('mongoose');
 
 
 //Define a schema
 //var Schema = mongoose.Schema;
 
 //title, author, copies must not be NULL
-var BookStoreSchma = new mongoose.Schema({
+const BookStoreSchema = new mongoose.Schema({
   _id: ObjectID,
   title: !String,
   author: !String,
@@ -16,4 +16,4 @@ var BookStoreSchma = new mongoose.Schema({
   rating: BigInt
 });
 
-mongoose.model('Bookstore', BookStoreSchma);
+mongoose.model('Bookstore', BookStoreSchema);
