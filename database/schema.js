@@ -3,10 +3,10 @@ var mongoose = require('mongoose');
 
 
 //Define a schema
-var Schema = mongoose.Schema;
+//var Schema = mongoose.Schema;
 
 //title, author, copies must not be NULL
-var BookStore = new Schema({
+var BookStoreSchma = new mongoose.Schema({
   _id: ObjectID,
   title: !String,
   author: !String,
@@ -15,3 +15,5 @@ var BookStore = new Schema({
   Comment: String,
   rating: BigInt
 });
+
+mongoose.model('Bookstore', BookStoreSchma);
