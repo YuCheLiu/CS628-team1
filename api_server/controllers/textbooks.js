@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
 const books = mongoose.model('Bookstore');
 //GET /textbooks
+//return the list of books
 const textbooksList = async (req, res) => {
     try {
         let bookList = await books.find({});
@@ -11,6 +12,7 @@ const textbooksList = async (req, res) => {
 };
 
 //POST /textbooks
+//add a new book 
 const textbooksCreateOne = (req, res) => {
     books.create({
         //ISBN: req.body.ISBN,
@@ -31,6 +33,7 @@ const textbooksCreateOne = (req, res) => {
 };
 
 //GET /textbooks/:textbooksid
+//get a specific book
 const textbooksReadOne = (req, res) => {
     books
         .findById(req.params.textbookid)
@@ -48,6 +51,7 @@ const textbooksReadOne = (req, res) => {
 };
 
 //PUT /textbooks/:textbooksid
+//modify the spcific book 
 const textbooksUpdateOne = (req, res) => {
     books
         .findById(req.params.textbookid)
@@ -78,6 +82,7 @@ const textbooksUpdateOne = (req, res) => {
 };
 
 //DELETE /textbooks/:textbooksid
+//delete a book
 const textbooksDeleteOne = (req, res) => {
     books.findByIdAndRemove(req.params.textbookid, (err) => {
         if (err) {
