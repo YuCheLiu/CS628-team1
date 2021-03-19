@@ -3,8 +3,8 @@ const books = mongoose.model('Bookstore');
 //GET /textbooks
 const textbooksList = async (req, res) => {
     try {
-        let bookList = await books.find().limit(10);
-        return res.bookList;
+        let bookList = await books.find({});
+        return res.status(200).json(bookList);
     } catch (err){
         return res.status(404).json(err);
     };
@@ -64,7 +64,7 @@ const textbooksUpdateOne = (req, res) => {
                 //textbook.publisher = req.body.publisher,
                 textbook.author = req.body.author,
                 textbook.copies = req.body.copies,
-                textbook.Customer_Name = req.body.Customer_Name,
+                //textbook.Customer_Name = req.body.Customer_Name,
                 textbook.rating = req.body.rating
                 textbook.save((err, newBook) => {
                     if (err){
