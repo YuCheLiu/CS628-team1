@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const books = mongoose.model('Bookstore');
+const books = mongoose.model('BookList');
 //GET /textbooks
 //return the list of books
 const textbooksList = async (req, res) => {
