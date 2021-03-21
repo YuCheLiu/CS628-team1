@@ -9,6 +9,9 @@ import { BookDeleteComponent } from './book-delete/book-delete.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTableModule} from '@angular/material/table';
 
+import {HttpClientModule} from '@angular/common/http'
+import { HttpConnectionService } from './http-connection/http-connection.service';
+
 
 @NgModule({
   declarations: [
@@ -21,9 +24,10 @@ import {MatTableModule} from '@angular/material/table';
     BrowserModule,
     AppRoutingModule,
     NoopAnimationsModule,
-    MatTableModule
+    MatTableModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [HttpConnectionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
