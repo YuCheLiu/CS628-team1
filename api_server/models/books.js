@@ -27,4 +27,4 @@ const BookStoreSchema = new mongoose.Schema({
   }
 });
 
-mongoose.model('Bookstore', BookStoreSchema, 'bookstores');
+mongoose.model('BookList', BookStoreSchema, 'BookList');

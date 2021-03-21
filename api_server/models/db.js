@@ -1,9 +1,7 @@
 const mongoose = require('mongoose');
-const dbURI = "mongodb+srv://admin:628@cluster0.jscoj.mongodb.net/Bookstore?retryWrites=true&w=majority"
-//const dbURI = "mongodb+srv://CS628team:UERjRwAMLQzLil4v@cluster0.7yjvb.mongodb.net/test";
-// if (process.env.NODE_ENV === 'production') {
-//     dbURI = "mongodb+srv://CS628team:xxxxxxxxx@cluster0.7yjvb.mongodb.net/test"
-// }
+//const dbURI = "mongodb+srv://admin:628@cluster0.jscoj.mongodb.net/Bookstore?retryWrites=true&w=majority"
+const dbURI = "mongodb+srv://CS628team:9qqvkb2RpsTTwwBX@cluster0.7yjvb.mongodb.net/CS628?retryWrites=true&w=majority";
+
 
 mongoose.connect(dbURI, {
     useNewUrlParser: true,

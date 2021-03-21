@@ -1,10 +1,10 @@
 const mongoose = require('mongoose')
-const books = mongoose.model('Bookstore');
+const books = mongoose.model('BookList');
 //GET /textbooks
 //return the list of books
 const textbooksList = async (req, res) => {
     try {
-        let bookList = await books.find({});
+        let bookList = await books.find({}).limit(2);
         return res.status(200).json(bookList);
     } catch (err){
         return res.status(404).json(err);
