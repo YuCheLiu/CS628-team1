@@ -9,3 +9,5 @@ Keywords: MEAN Stack, JavaScript, Angular, Express, MongoDB, GitHub, bookstore
 
 
 An online bookstore is a web application that allows customers to buy books online. Customers can search for a book by title or author using a web browser, add it to their shopping cart, and then buy it using a credit card transaction. Due to the time limit of this project, not all functionalities of an online bookstore will be implemented. Instead, our application allows users to view lists of books, the details of the books, delete books, add comments about the books, and give ratings to the books.
+
+![image](https://user-images.githubusercontent.com/36752097/111948136-edda4200-8a9b-11eb-8abf-bb374a041cdf.png)
